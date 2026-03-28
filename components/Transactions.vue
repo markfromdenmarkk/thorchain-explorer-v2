@@ -190,7 +190,7 @@ export default {
           field: 'type',
         },
         {
-          label: 'Block Height',
+          label: 'Block',
           field: 'height',
           formatFn: this.normalFormat,
         },

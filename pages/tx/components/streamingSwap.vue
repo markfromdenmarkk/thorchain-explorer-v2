@@ -297,7 +297,7 @@ export default {
 
 <style lang="scss">
 .streaming-card {
-  max-width: 680px !important;
+  max-width: 940px !important;
   margin: 0 10px;
   @include lg{
     margin: auto !important;

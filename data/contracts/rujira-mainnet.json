@@ -1,0 +1,137 @@
+{
+  "lastReviewed": "2026-03-24",
+  "sources": {
+    "releasesAndContracts": "https://docs.rujira.network/resources/releases-and-contracts",
+    "mainnetDeploymentGuide": "https://docs.rujira.network/developers/mainnet-deployment-guide",
+    "deploymentApp": "https://rujira.network/developer/deployment"
+  },
+  "families": {
+    "rujira-fin": {
+      "product": "RUJI Trade",
+      "name": "RUJI Trade",
+      "role": "trading",
+      "description": "Core RUJI Trade contracts used to execute trades and route internal trade logic on mainnet."
+    },
+    "rujira-bow": {
+      "product": "RUJI Pools",
+      "name": "RUJI Pools",
+      "role": "liquidity",
+      "description": "Liquidity and pool-management contracts for the RUJI Pools product."
+    },
+    "rujira-ghost-credit": {
+      "product": "RUJI Lending",
+      "name": "RUJI Lending credit",
+      "role": "lending",
+      "description": "Credit-account contract family used by RUJI Lending."
+    },
+    "rujira-ghost-vault": {
+      "product": "RUJI Lending",
+      "name": "RUJI Lending vault",
+      "role": "lending",
+      "description": "Vault contract family used by RUJI Lending collateral and account flows."
+    },
+    "rujira-merge": {
+      "product": "$RUJI",
+      "name": "RUJI merge",
+      "role": "migration",
+      "description": "Merge and migration contracts for moving assets into the RUJI token system."
+    },
+    "rujira-mint": {
+      "product": "$RUJI",
+      "name": "RUJI mint",
+      "role": "minting",
+      "description": "Minting and token-factory helper contracts for RUJI assets."
+    },
+    "rujira-revenue": {
+      "product": "$RUJI",
+      "name": "RUJI revenue",
+      "role": "revenue",
+      "description": "Revenue and fee-distribution contracts for RUJI ecosystem flows."
+    },
+    "rujira-staking": {
+      "product": "$RUJI",
+      "name": "RUJI staking",
+      "role": "staking",
+      "description": "Staking and rewards contracts used by RUJI and related staking products such as sTCY."
+    },
+    "levana-perpswap-cosmos-factory": {
+      "product": "RUJI Perps",
+      "name": "RUJI Perps factory",
+      "role": "factory",
+      "description": "Factory contract used to deploy or coordinate RUJI Perps market contracts."
+    },
+    "nami-affiliate": {
+      "product": "RUJI Index",
+      "name": "RUJI Index affiliate",
+      "role": "affiliate",
+      "description": "Affiliate contract used by the RUJI Index product."
+    }
+  },
+  "addresses": {
+    "thor1t2cnyn98xusxakgemsenn2p9n3ykd6accr2c0zg22nczh097ln7qeze20f": {
+      "family": "rujira-fin",
+      "name": "RUJI Trade entry contract",
+      "role": "entrypoint",
+      "description": "User-facing RUJI Trade contract that receives execute messages and starts trade processing.",
+      "inferred": true
+    },
+    "thor136rwqvwy3flttm9wfnc5xgnlr6mu5k8e2elgzs2hdhuwf50w3l2q0nu2qu": {
+      "family": "rujira-fin",
+      "name": "RUJI Trade calc manager",
+      "role": "strategy_manager",
+      "description": "Internal manager contract that dispatches RUJI Trade strategy execution.",
+      "inferred": true
+    },
+    "thor1lhpghazamcsr67y4ehah8pxwyn0s4klyz2qsm8v7wkqylffaja3qrwlct0": {
+      "family": "rujira-fin",
+      "name": "RUJI Trade calc strategy",
+      "role": "strategy_executor",
+      "description": "Internal strategy contract used during RUJI Trade execution paths.",
+      "inferred": true
+    },
+    "thor17cawwg2lsnvcne69fek6nsqkf8snma6gc5ccceshul86rl0u3q4s5l5d0a": {
+      "family": "rujira-fin",
+      "name": "RUJI Trade market contract",
+      "role": "market",
+      "description": "Trade-market contract that emits RUJI trade events and performs the main asset exchange.",
+      "inferred": true
+    },
+    "thor1gm8q2gr25nzzsxzdp2mpja4hyvyhjlr4s6krcsgv2y953uu0js3qhwpus7": {
+      "family": "rujira-revenue",
+      "name": "RUJI fee recipient",
+      "role": "fee_recipient",
+      "description": "Receives RUJI fee distributions during trade execution flows.",
+      "inferred": true
+    },
+    "thor13g83nn5ef4qzqeafp0508dnvkvm0zqr3sj7eefcn5umu65gqluusrml5cr": {
+      "family": "rujira-staking",
+      "name": "RUJI staking contract A",
+      "role": "staking",
+      "description": "Mainnet RUJI staking contract listed in Releases & Contracts."
+    },
+    "thor18kxeqhw8nukm3sksj56uh4zf76ctn0mm3x8yrzr56hdhlsk966dqqeedwx": {
+      "family": "rujira-staking",
+      "name": "RUJI staking contract B",
+      "role": "staking",
+      "description": "Mainnet RUJI staking contract listed in Releases & Contracts."
+    },
+    "thor1z7ejlk5wk2pxh9nfwjzkkdnrq4p2f5rjcpudltv0gh282dwfz6nq9g2cr0": {
+      "family": "rujira-staking",
+      "name": "RUJI staking contract C",
+      "role": "staking",
+      "description": "Mainnet RUJI staking contract listed in Releases & Contracts."
+    },
+    "thor1gclfrvam6a33yhpw3ut3arajyqs06esdvt9pfvluzwsslap9p6uqt4rzxs": {
+      "family": "levana-perpswap-cosmos-factory",
+      "name": "RUJI Perps factory",
+      "role": "factory",
+      "description": "Mainnet RUJI Perps factory contract listed in Releases & Contracts."
+    },
+    "thor1v3f7h384r8hw6r3dtcgfq6d5fq842u6cjzeuu8nr0cp93j7zfxyquyrfl8": {
+      "family": "nami-affiliate",
+      "name": "RUJI Index affiliate",
+      "role": "affiliate",
+      "description": "Mainnet RUJI Index affiliate contract listed in Releases & Contracts."
+    }
+  }
+}

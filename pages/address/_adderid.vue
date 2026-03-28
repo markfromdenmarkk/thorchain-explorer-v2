@@ -40,6 +40,7 @@
             :state="addressStat"
             :loading="addressLoading"
           />
+          <!--
           <balance-history
             v-if="
               address &&
@@ -52,6 +53,7 @@
             class="card-balance-history"
             :address="address"
           />
+          -->
         </div>
       </div>
       <div v-if="isVault">
@@ -669,17 +671,23 @@ export default {
     flex: 1 1 calc(50% - 1rem);
     display: flex;
     flex-direction: column;
+    min-width: 0;
   }
 
   @include lg {
-    .card-balance,
-    .card-balance-history,
-    .node-address-card {
-      flex: 1 1 calc(50% - 1rem);
-    }
     .balance-nav-container {
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
+
+    .card-balance,
+    .node-address-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    .card-balance-history {
+      flex: 0 1 48%;
     }
   }
   .content {

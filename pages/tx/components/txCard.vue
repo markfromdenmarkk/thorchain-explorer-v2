@@ -375,7 +375,7 @@ export default {
 <style lang="scss" scoped>
 $border-size: 2px;
 .tx-card {
-  max-width: 680px;
+  max-width: 940px;
   background-color: var(--card-bg-color);
   border-radius: $radius-lg;
   border: 1px solid var(--border-color);

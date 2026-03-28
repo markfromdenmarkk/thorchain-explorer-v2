@@ -82,7 +82,7 @@ export default {}
 .tx-container {
   padding: $space-20;
   border-radius: $radius-2lg;
-  max-width: 680px;
+  max-width: 940px;
   margin: auto;
   background-color: var(--card-bg-color);
   border: 1px solid var(--border-color);

@@ -10,6 +10,8 @@ export function buildCardDetails(cardBase, ctx) {
   return {
     title: cardBase.title,
     labels: cardBase.labels ?? [],
+    summary: cardBase.summary ?? '',
+    overview: cardBase.overview ?? null,
     overall: {
       in: cardBase.in?.map((a) => ({
         asset: a?.asset,
